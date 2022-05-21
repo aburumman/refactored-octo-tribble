@@ -1,0 +1,55 @@
+[0m
+# module.oracle-rds.aws_db_instance.this:
+resource "aws_db_instance" "this" {
+    [1m[0maddress[0m[0m                               = "imtprod.c6uvorxmjb37.us-east-1.rds.amazonaws.com"
+    [1m[0mallocated_storage[0m[0m                     = 20
+    [1m[0marn[0m[0m                                   = "arn:aws:rds:us-east-1:590969419183:db:imtprod"
+    [1m[0mauto_minor_version_upgrade[0m[0m            = true
+    [1m[0mavailability_zone[0m[0m                     = "us-east-1b"
+    [1m[0mbackup_retention_period[0m[0m               = 0
+    [1m[0mbackup_window[0m[0m                         = "07:07-07:37"
+    [1m[0mca_cert_identifier[0m[0m                    = "rds-ca-2019"
+    [1m[0mcharacter_set_name[0m[0m                    = "AL32UTF8"
+    [1m[0mcopy_tags_to_snapshot[0m[0m                 = false
+    [1m[0mcustomer_owned_ip_enabled[0m[0m             = false
+    [1m[0mdb_name[0m[0m                               = "ORCL"
+    [1m[0mdb_subnet_group_name[0m[0m                  = "default"
+    [1m[0mdelete_automated_backups[0m[0m              = true
+    [1m[0mdeletion_protection[0m[0m                   = false
+    [1m[0mendpoint[0m[0m                              = "imtprod.c6uvorxmjb37.us-east-1.rds.amazonaws.com:1521"
+    [1m[0mengine[0m[0m                                = "oracle-ee"
+    [1m[0mengine_version[0m[0m                        = "12.1.0.2.v24"
+    [1m[0mengine_version_actual[0m[0m                 = "12.1.0.2.v24"
+    [1m[0mhosted_zone_id[0m[0m                        = "Z2R2ITUGPM61AM"
+    [1m[0miam_database_authentication_enabled[0m[0m   = false
+    [1m[0mid[0m[0m                                    = "imtprod"
+    [1m[0midentifier[0m[0m                            = "imtprod"
+    [1m[0minstance_class[0m[0m                        = "db.t3.micro"
+    [1m[0miops[0m[0m                                  = 0
+    [1m[0mlatest_restorable_time[0m[0m                = "0001-01-01T00:00:00Z"
+    [1m[0mlicense_model[0m[0m                         = "bring-your-own-license"
+    [1m[0mmaintenance_window[0m[0m                    = "sat:03:00-sat:03:30"
+    [1m[0mmax_allocated_storage[0m[0m                 = 0
+    [1m[0mmonitoring_interval[0m[0m                   = 0
+    [1m[0mmulti_az[0m[0m                              = false
+    [1m[0mname[0m[0m                                  = "ORCL"
+    [1m[0mnchar_character_set_name[0m[0m              = "AL16UTF16"
+    [1m[0moption_group_name[0m[0m                     = "default:oracle-ee-12-1"
+    [1m[0mparameter_group_name[0m[0m                  = "default.oracle-ee-12.1"
+    [1m[0mpassword[0m[0m                              = (sensitive value)
+    [1m[0mperformance_insights_enabled[0m[0m          = false
+    [1m[0mperformance_insights_retention_period[0m[0m = 0
+    [1m[0mport[0m[0m                                  = 1521
+    [1m[0mpublicly_accessible[0m[0m                   = true
+    [1m[0mreplicas[0m[0m                              = []
+    [1m[0mresource_id[0m[0m                           = "db-3QFXAXA4OHAIBJZBDATK46RE3M"
+    [1m[0mskip_final_snapshot[0m[0m                   = true
+    [1m[0mstatus[0m[0m                                = "available"
+    [1m[0mstorage_encrypted[0m[0m                     = false
+    [1m[0mstorage_type[0m[0m                          = "gp2"
+    [1m[0mtags_all[0m[0m                              = {}
+    [1m[0musername[0m[0m                              = "imtuser"
+    [1m[0mvpc_security_group_ids[0m[0m                = [
+        "sg-0de5efc4217bc2f31",
+    ]
+}[0m[0m

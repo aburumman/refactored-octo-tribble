@@ -1,0 +1,54 @@
+# module.oracle-rds.aws_db_instance.this:
+resource "aws_db_instance" "this" {
+    address                               = "imtprod.c6uvorxmjb37.us-east-1.rds.amazonaws.com"
+    allocated_storage                     = 20
+    arn                                   = "arn:aws:rds:us-east-1:590969419183:db:imtprod"
+    auto_minor_version_upgrade            = true
+    availability_zone                     = "us-east-1b"
+    backup_retention_period               = 0
+    backup_window                         = "07:07-07:37"
+    ca_cert_identifier                    = "rds-ca-2019"
+    character_set_name                    = "AL32UTF8"
+    copy_tags_to_snapshot                 = false
+    customer_owned_ip_enabled             = false
+    db_name                               = "ORCL"
+    db_subnet_group_name                  = "default"
+    delete_automated_backups              = true
+    deletion_protection                   = false
+    endpoint                              = "imtprod.c6uvorxmjb37.us-east-1.rds.amazonaws.com:1521"
+    engine                                = "oracle-ee"
+    engine_version                        = "12.1.0.2.v24"
+    engine_version_actual                 = "12.1.0.2.v24"
+    hosted_zone_id                        = "Z2R2ITUGPM61AM"
+    iam_database_authentication_enabled   = false
+    id                                    = "imtprod"
+    identifier                            = "imtprod"
+    instance_class                        = "db.t3.micro"
+    iops                                  = 0
+    latest_restorable_time                = "0001-01-01T00:00:00Z"
+    license_model                         = "bring-your-own-license"
+    maintenance_window                    = "sat:03:00-sat:03:30"
+    max_allocated_storage                 = 0
+    monitoring_interval                   = 0
+    multi_az                              = false
+    name                                  = "ORCL"
+    nchar_character_set_name              = "AL16UTF16"
+    option_group_name                     = "default:oracle-ee-12-1"
+    parameter_group_name                  = "default.oracle-ee-12.1"
+    password                              = (sensitive value)
+    performance_insights_enabled          = false
+    performance_insights_retention_period = 0
+    port                                  = 1521
+    publicly_accessible                   = true
+    replicas                              = []
+    resource_id                           = "db-3QFXAXA4OHAIBJZBDATK46RE3M"
+    skip_final_snapshot                   = true
+    status                                = "available"
+    storage_encrypted                     = false
+    storage_type                          = "gp2"
+    tags_all                              = {}
+    username                              = "imtuser"
+    vpc_security_group_ids                = [
+        "sg-0de5efc4217bc2f31",
+    ]
+}
