@@ -73,3 +73,4 @@ variable "allocated_storage" {
     description = ""
     default = "20"
 }
+

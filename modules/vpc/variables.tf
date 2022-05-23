@@ -28,3 +28,8 @@ variable "application" {
   description = "The department or application using this resource"
   default     = "IMT"
 }
+
+variable "zone" {
+    description = "VPC endpoint AZ"
+    default = "us-east-2"
+}

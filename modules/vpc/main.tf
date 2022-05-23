@@ -120,3 +120,14 @@ resource "aws_route" "public_internet_gateway" {
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.this.id
 }
+
+resource "aws_vpc_endpoint" "s3" {
+  vpc_id = aws_vpc.this.id
+  service_name = "com.amazonaws.us-west-2.s3"
+  //service_name = "com.amazonaws.${var.zone}.s3"
+}
+
+resource "aws_vpc_endpoint_route_table_association" "s3_endpoint" {
+  route_table_id = aws_route_table.private.id
+  vpc_endpoint_id = aws_vpc_endpoint.s3.id
+}
